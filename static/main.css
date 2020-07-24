@@ -1,0 +1,124 @@
+.user_card {
+    margin:10px; 
+    width: 200px; 
+    height: 300px; 
+    background-color: rgb(179, 179, 179); 
+    position:relative; 
+    float: left;
+    opacity: 0;
+    cursor:pointer;
+    margin-bottom: 30px;
+    pointer-events: none;
+}
+.user_card:hover {
+    background-color: rgb(218, 218, 218);
+}
+.user_card_pic {
+    width: 190px; 
+    height: 290px; 
+    position: absolute; 
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: white;
+    object-fit: contain;
+}
+
+.user_card_role {
+    width: 50px;
+    height: 50px; 
+    position: absolute; 
+    top:245px; 
+    left: 145px;
+    object-fit: contain;
+}
+
+.user_card_name {
+    width:200; 
+    height: 20px; 
+    position: absolute; 
+    top:300px; 
+    left: 0px; 
+    color:black; 
+    font-size: 20px; 
+    text-align: center; 
+}
+
+.user_card_knife {
+    width: 50px;
+    height: 50px; 
+    position: absolute; 
+    top: -10px; 
+    left: -10px;
+    object-fit: contain;
+    display: none;
+}
+
+.user_card_vote {
+    width:10px; 
+    height: 10px; 
+    position: absolute; 
+    top:5px; 
+    left: 30px; 
+    color:red; 
+    /* background-color: white; */
+    font-size: 20px; 
+    text-align: center; 
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+    display: none;
+}
+
+.user_card_dead {
+    width: 200px; 
+    height: 300px; 
+    background-color: rgba(45, 45, 45, 0.5); 
+    font-family: Helvetica; 
+    position: absolute; 
+    font-size: 4cm; 
+    text-align: center; 
+    line-height: 280px;
+    display: none;
+}
+
+.btn {
+    width: 100%; 
+    height: 50px; 
+    line-height: 50px; 
+    text-align: center; 
+    background-color: white;
+    cursor:pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.role-label {
+    width: 150px; 
+    height: 40px; 
+    line-height: 40px; 
+    text-align: center; 
+    /* background-color: beige; */
+    border-bottom: solid;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+.input{
+    line-height: 35px;
+    width:136px;
+    margin: 5px;
+    font-size:15px;
+    background:#ffffffaa;
+    border:0px;
+    color:#333;
+    text-align: center;
+}
+.input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #ffffff00 inset;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff00 inset;
+    -webkit-text-fill-color:#555!important; 
+} 

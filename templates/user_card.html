@@ -1,0 +1,8 @@
+<div class="user_card" id="{{name}}_card" onclick="on_card_click(event, '{{name}}')">
+    <img class="user_card_pic" src="{{avatar}}"/>
+    <div class="user_card_dead" id="{{name}}_card_dead">X</div>
+    <img class="user_card_role" id="{{name}}_card_role" src="{{role}}"/>
+    <img class="user_card_knife" id="{{name}}_card_knife" src="{{url_for('static', filename='images/knife.png')}}"/>
+    <div class="user_card_vote" id="{{name}}_card_vote">0</div>
+    <div class="user_card_name">{{name}}</div>
+</div>

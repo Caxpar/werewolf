@@ -1,0 +1,22 @@
+{% if res=="wrong" %}
+	<script language=javascript>
+		alert("wrong user name or password");
+	</script>
+{% endif %}
+
+<head>
+    <title>KE LION</title>
+    <link href="{{url_for("static", filename="login/login.css")}}" rel="stylesheet"/>
+    <link href="{{url_for("static", filename="login/icon.jpg")}}" rel="shortcut icon"/>
+    <script src="{{url_for("static", filename="login/login.js")}}"/></script>
+</head>
+
+<body onload="show_login('login_form')" background="{{ url_for("static", filename="login/bg.jpg") }}" style="font-family:Helvetica; background-repeat: no-repeat; background-size: cover;">
+<div class="login_div">
+    <form id="login_form" class='login_form' action="/" method="post">
+		<input class="input" type="text" name="name" placeholder="name:"><br/>
+		<input class="input" type="password" name="pass" placeholder="password:">
+	</form>
+    <div id="login_btn" class="login_btn" onclick="show_login('login_form')">Login</div>
+</div>
+</body>
